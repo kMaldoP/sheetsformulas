@@ -6,15 +6,18 @@ class SplitTips:
         self.open_tabs = open_tabs
        
 
-    def first_split(self):
+    def split(self):
         self.bartenders = int(input('Enter number of bartenders to split:    '))
-        total1 = (self.cash + self.ccards + (self.open_tabs * .10) / self.bartenders)
-        return total1
+
+        total = self.cash + self.ccards + (self.open_tabs * .10) / self.bartenders
+
+        return int(total)
 
 
-    
+##drive code
+day1 = SplitTips(100, 50.25, 150.25)
 
-cash = int(input('Enter cash total:        '))
-ccards = float(input('Enter total cc tips:     '))
-open_tabs = float(input('Enter the total of open tabs:    '))
+# cash = int(input('Enter cash total:        '))
+# ccards = float(input('Enter total cc tips:     '))
+# open_tabs = float(input('Enter the total of open tabs:    '))
 
