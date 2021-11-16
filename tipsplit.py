@@ -1,5 +1,5 @@
 
-class split_tips:
+class SplitTips:
     def __init__(self, cash, ccards, open_tabs):
         self.cash = cash
         self.ccards = ccards
@@ -7,15 +7,14 @@ class split_tips:
        
 
     def first_split(self):
-        bartenders = int(input('Enter number of bartenders to split:    '))
-        total1 = ((cash + ccards + (open_tabs * .10)) / bartenders)
+        self.bartenders = int(input('Enter number of bartenders to split:    '))
+        total1 = (self.cash + self.ccards + (self.open_tabs * .10) / self.bartenders)
         return total1
-
 
 
     
 
 cash = int(input('Enter cash total:        '))
-ccards =int(input('Enter total cc tips:     '))
-open_tabs = int(input('Enter the total of open tabs:    '))
-bartenders = int(input('Enter number of bartenders to split:    '))
+ccards = float(input('Enter total cc tips:     '))
+open_tabs = float(input('Enter the total of open tabs:    '))
+
