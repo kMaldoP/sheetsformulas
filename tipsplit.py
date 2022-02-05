@@ -4,14 +4,14 @@ class SplitTips:
         self.cash = cash
         self.ccards = ccards
         self.open_tabs = open_tabs
-       
+        self.tippercentage = self.ccards * .10
 
     def split(self):
         self.bartenders = int(input('Enter number of bartenders to split:    '))
 
-        total = self.cash + self.ccards + (self.open_tabs * .10) / self.bartenders
+        total = (self.cash + self.ccards + self.tippercentage) / self.bartenders
 
-        return int(total)
+        return total
 
 
 ##drive code
