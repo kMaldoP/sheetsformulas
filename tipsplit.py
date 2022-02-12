@@ -8,9 +8,7 @@ class SplitTips:
 
     def Split1(self):
         self.bartenders = int(input('Enter number of bartenders to split:    '))
-
         total = (self.cash + self.ccards + self.rolloverpercentage) / self.bartenders
-
         return total
 
     def Split2(self ):
@@ -28,4 +26,6 @@ day1 = SplitTips(100, 50.25, 150.25)
 # cash = int(input('Enter cash total:        '))
 # ccards = float(input('Enter total cc tips:     '))
 # open_tabs = float(input('Enter the total of open tabs:    '))
-
+"""
+we are looking to create an algorithm that is going to allow us to calculate tips and populate into somethihg 
+"""
