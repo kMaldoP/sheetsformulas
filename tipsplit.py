@@ -9,7 +9,7 @@ class SplitTips:
     def Split1(self):
         self.bartenders = int(input('Enter number of bartenders to split:    '))
         total = (self.cash + self.ccards + self.rolloverpercentage) / self.bartenders
-        return total
+        print(f"Total for each bartender is {total}")
 
     def Split2(self ):
         cash2 = self.cash - int(input("enter the amount of cash:  "))
